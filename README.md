@@ -19,6 +19,13 @@ Run uploader and follow install instructions.
 
 Change dropbox uploader settings in db-backup.sh. Thats it.
 
+### Cronjob
+If you want the backup every day? Use crontab.
+
+    crontab -e
+    # Add the following line
+    0 1 * * * /path/to/script/db-backup.sh &> /dev/null
+
 ## Changelog
 
 ### 29.11.2016:
